@@ -1,0 +1,33 @@
+# Environment files (keep examples)
+.env
+.env.*
+!.env.example
+
+# Ruby / Rails
+.bundle/
+vendor/bundle/
+log/
+tmp/
+storage/
+public/assets/
+public/packs/
+*.rbc
+
+# Databases
+*.sqlite3
+*.sqlite3-journal
+
+# Node / frontend
+node_modules/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Tooling
+.ruby-lsp/
+coverage/
+
+# Agent docs
+AGENTS.md
