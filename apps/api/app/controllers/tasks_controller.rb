@@ -2,7 +2,13 @@ class TasksController < ApplicationController
   before_action :set_task, only: %i[show update destroy]
 
   def index
-    render json: Task.all
+    tasks = Task.all
+
+    tasks = tasks.where(status: params[:status]) if params[:status].present?
+
+    tasks = tasks.where(due_date: params[:due_date]) if params[:due_date].present?
+
+    render json: tasks
   end
 
   def show
