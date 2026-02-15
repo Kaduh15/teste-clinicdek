@@ -62,6 +62,8 @@ Retorna HTTP 422 com o formato:
 
 Requisitos: Docker e Docker Compose
 
+Crie um `.env` na raiz (pode copiar de `.env.example`) para ajustar as variaveis do compose.
+
 ```bash
 RAILS_MASTER_KEY=<sua_master_key> docker compose up --build
 ```
